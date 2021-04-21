@@ -1,0 +1,12 @@
+etiquetas en bloque: ocupan todo el ancho del contenedor
+
+etiquetas en linea: ocupan lo q ocupa el contenido. se colocan una al lado de la otra y cuando
+no entra se va para abajo.
+
+hay etiquetas que funcionan como "parentesis", son etiquetas que contienen otros
+elementos adentro
+
+la etiqueta div por ejemplo, agrupa una serie de elementos a los que puedo agregarle un
+estilo en particular. se utiliza para posicionamiento.
+
+como elemento en linea, podemos usar la etiqueta span, tambien para dar estilo

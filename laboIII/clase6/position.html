@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1200px;
+        }
+        div{
+            height: 300px;
+            width: 300px;
+        }
+        #div1{
+            background-color: green;
+            /* position: fixed;
+            left: 500px; */
+        }
+        #div2{
+            background-color: red;
+            position: relative; /*siempre agregar el position relative para poder moverlo, y luego las propiedades como left x ej*/
+            /* left: 100px;
+            top: 10px; */
+            top: 400px;
+            left: 200px;
+            z-index: 1;
+        }
+        #div3{  
+            background-color: blue;
+            /* position: sticky;
+            left: 1000px;
+            top: 0px; */
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

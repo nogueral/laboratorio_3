@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    button{
+        background: transparent;
+        border: none;
+    }
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td, th{
+        border: 1px solid black;
+    }
+    tr:nth-of-type(even){
+        background-color: coral;
+    }
+    div{
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        border: 1px solid black;
+        margin-top: 10px;
+        margin-left: -200px;
+        transition: margin-left 10s, background-color 5s;
+    }
+    div:hover{
+        margin-left: 0px;
+        background-color: green;
+    }
+</style>
+<body>
+    <button><i class="fa fa-floppy-o" style="color:red; font-size: 40px;" aria-hidden="true"></i></button><!--entrar a font awesome y cdnjs-->
+    <table>
+        <th>
+            <tr>
+                <td>encabezado1</td>
+                <td>encabezado2</td>
+                <td>encabezado3</td>
+            </tr>
+            <tb>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tb>
+        </th>
+    </table>
+    <div>
+        
+    </div>
+</body>
+</html>

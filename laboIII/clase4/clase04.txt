@@ -1,0 +1,35 @@
+JAVASCRIPT
+
+nacio en los 90 p darle funcionalidad a las paginas web.
+
+lenguajes sincronicos -> pensados para ser ejecutados localmente, aplicaciones de consola x ej 
+
+lenguajes asincronicos -> concepto de cliente - servidor. viaja de la pc del cliente por la url hasta la pc del servidor. usa base de datos o saca el recurso que estamos pidiendo de algun lado, y eso lo envia de vuelta hacia el cliente. eso genera una lag, tiempo que tarda este proceso en finalizar, entonces javascript incorpora el concepto de asincronia.
+
+CONCURRENCIA VS PARALELISMO:
+
+concurrencia: hay varios procesos, y hay un solo hilo de ejecucion atendiendo esos procesos.
+
+paralelismo: hay varios hilos de ejecucion atendiendo los procesos.
+
+BLOQUEANTE VS NO BLOQUEANTE:
+
+bloqueante: se esta realizando una tarea y a continuacion se va a realizar otra. p realizar la 2a se necesita que se finalice la primera.
+
+sincrono, a veces es confundido con bloqueante. lo sincronico nos dice que las cosas se van a ejecutar una a continuacion de la otra. lo asincronico tiene q ver con el concepto de que yo necesito hacer una tarea q va a demorar un tiempo, entonces esa tarea la delego y m dedico a hacer otras cosas, y en algun momento esa tarea me va a devolver algo.
+
+en js hay tareas que se van a realizar en el flujo del cliente, y hay tareas que se van a delegar. 
+
+js es asincrono, no bloqueante y concurrente. 
+
+ver: http://latentflip.com/
+
+conceptos de call stack, web apis + callback queue
+
+call stack: entra todo lo sincronico y bloqueante
+
+a la web api va todo lo asincronico y no bloqueante 
+
+en el callback queue entra todo el proceso que ya esta finalizado, viene de las web apis 
+
+MINIFICACION -> se minimizan las lineas de codigo

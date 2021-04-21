@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 800px;
+        display: flex; /*Coloca los elemtos uno al lado del otro*/
+        flex-wrap: wrap; /*respeta el ancho y cuando un elemento lo excede, lo apila abajo*/
+        flex-direction: row; /*lo apilas en columna o row, hay varias opciones*/
+        justify-content: space-evenly; /*center centra todos los items, space-around x ej distribuye equitativamente los espacios, space-bettwen hacee algo parecido*/
+        align-items: flex-end;
+    }
+    div{
+        height: 200px;
+        width: 200px;   
+        background-color: green;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div style="order: 2;">1</div>
+    <div style="order: 3;">2</div>
+    <div style="order: 4;">3</div>
+    <div style="order: 9;">4</div>
+    <div style="order: 8;">5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</body>
+</html>

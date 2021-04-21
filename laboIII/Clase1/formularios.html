@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--label-->
+    <!--input-->
+    <!--seleccion-->
+    <!--button-->
+    <h1>Formularios</h1>
+
+    <form target="/registro.php" method="GET">
+        <!--El formulario envia datos por POST y GET. Por get significa que los envia en la cabecera de la peticion, por POST lo envia desde el cuerpo de la peticion. Por default el form toma GET. Cuidado con los passwords xq los datos aparecen en la url en el caso de get. El atributo target me indica a donde quiero enviar los datos-->
+        <label for="txtNombre">Nombre: </label>
+        <!--con el for vinculo el label con la caja de texto y pongo el foco al hacer click en nombre-->
+        <input type="text" id="txtNombre" name="nombre" required minlength="2"><br>
+        <!--atributos disable / readonly en text no m permiten escribir nada, se puede usar con JS-->
+        <!--el atributo nombre hace las veces de variable donde se cargan los datos, es la key del dato, si no lo agrego no se envia la informacion-->
+        <label for="txtEdad">Edad: </label>
+        <input type="number" min="18" max="65" id="txtEdad" name="edad"><br>
+        <label for="txtPas">Clave: </label>
+        <input type="password" id="txtPas" name="password"><br>
+        <!--submit actualiza el envio de informacion, la etiqueta de tipo button tambien lo envia-->
+        <label for="txtEmail">Email: </label>
+        <input type="email" id="txtEmail" name="email" autocomplete="off"><br>
+        <input type="file" name="" id=""><br>
+
+        <fieldset>
+            <legend>Genero</legend>
+        <input type="radio" name="sexo" id="" value="M" checked>Masculino <br>
+        <input type="radio" name="sexo" id="" value="F">Femenino <br>
+        <!--El atributo name permite agruparlas, y se selecciona solo uno de los radio, la etiqueta checked indica cual aparece chequeado-->
+        </fieldset>
+        <fieldset>
+            <legend>Deporte</legend>
+        <input type="checkbox" name="Deporte" id="" value="Natacion" checked>Natacion <br>
+        <input type="checkbox" name="Deporte" id="" value="Futbol">Futbol <br>
+        <!--el checkbox me permite seleccionar mas de uno-->
+        </fieldset>
+
+        <label for="cboLocalidad">Localidad </label>
+        <select name="localidad" id="cboLocalidad">
+            <!--el atributo multiple me permite seleccionar varias opciones-->
+            <optgroup label="Zona Sur">
+            <option value="Avellaneda">Avellaneda</option>
+            <option value="Quilmes" selected>Quilmes</option>
+            <option value="Bernal">Bernal</option>
+            <option value="Wilde">Wilde</option>
+            <option value="Sarandi">Sarandi</option>
+            </optgroup>
+        </select><br><br>
+   
+
+        <input type="submit">
+        <!--input button NO actualiza el envio de informacion, se usa para validaciones x ej-->
+        <input type="button" value="Registrarse">
+        <input type="reset" value="Reestablecer"><br>
+
+        <label for="">Lenguajes de Programacion</label>
+        <input type="list" list="lenguajes">
+        <datalist id="lenguajes">
+            <option value="Java">lenguaje Java</option>
+            <option value="javascript">JS</option>
+            <option value="C">lenguaje C</option>
+        </datalist>
+
+        <figure>
+            <img src="assets/utnfra.jpg" alt="utn fra">
+            <!-- hay varios tipos de archivos para imagenes:
+            pgn, gif, jpg, etc hay un nuevo formato llamado webp que admite transparencia y animaciones, en cierta forma viene a reemplazar al resto de los formatos-->
+        </figure>
+        
+
+    </form>
+</body>
+</html>

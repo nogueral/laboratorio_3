@@ -1,0 +1,23 @@
+/*si el archivo lo creo como _colors.scss con el _ evito q se cree automaticamente el archivo css*/
+div p {
+  background-color: green;
+  background-color: red;
+  border-width: 3px;
+}
+
+div .importante {
+  background-color: yellow;
+}
+
+div .importante .masImportantes {
+  background-color: green;
+}
+
+div > .importante {
+  background-color: yellow;
+}
+
+.importante {
+  background-color: yellow;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,62 @@
+CLASE 3 - METADATOS
+
+Todo aquello q tiene significado para los motores de busqueda, indexadores, etc.
+
+MICRODATOS:
+
+schema.org: contiene mucha informacion respecto al significado de las etiquetas semanticas
+
+el atributo itemscope de la etiqueta div indica que lo que esta encerrado en esta etiqueta es el
+contenido de algo en particular. Por ejemplo, tenemos el contenido movie donde tenemos una serie de
+atributos a utilizar en caso de publicar info sobre una pelicula.
+
+con ctrl + U vemos el codigo fuente de la pagina 
+
+prueba de datos estructurados de google analiza si el codigo HTML generado es correcto:
+
+https://search.google.com/structured-data/testing-tool/?hl=es
+
+flaticon.com -> para descargar iconos que podemos usar en nuestra pagina HTML
+
+dev.w3.org/html5 - caracteres especiales HTML
+Se puede buscar por entity html en google
+
+
+Hasta no hace mucho, solo se usaba div para todo, es una etiqueta contenedora. Sirve para contener una parte de la pagina HTML. Sirve para agrupar contenido que tiene alguna vinculacion entre si. Es una especie de agrupamientos de caja. Para resolver el "sobreagrupamiento" de divs, aparecen unas etiquetas semanticas que le dan cierto significado al codigo HTML.
+
+HEADER: La cabecera de la pagina, donde vemos el Logo, el titulo. Alguna barra de navegacion (etiqueta NAV) con hipervinculos que me llevan a otra ruta dentro de la misma pagina u otras paginas. A veces algun buscador.
+
+NAV: Conjuntos de hipervinculos.
+
+MAIN: La informacion mas importante de la pagina. El objetivo. Por ej: en una pag de vtas de casa lo mas importante son las publicaciones. Basicamente es lo mas importante de la pagina, por que la creamos.
+
+ASIDE: al cotado, no es algo q este directamente relacionado con el obj de la pagina. Normalmente el aside es muy comun que este al costado a la derecha, pero puede ir en cualquier lado. no es algo demasiado importante pero si esta en cierta forma vinculado con el tema ppal.
+
+SECTION: Distintas partes de mi pagina. Voy dividiendo mi pagina en secciones. UN diario x ej (economia, politica, espectaculos, etc)
+
+ARTICLE: Adentro de un article va el contenido q es independiente del resto, podria sacarlo de la pagina y ponerlo en otra y tendria significado por si mismo.
+
+EXISTEN UNAS ETIQUETAS NUEVAS
+
+DIALOG: abre una ventana modal, una especie de contenedor flotante. puede trasladarse por encima del texto.
+
+DETAILS: Puedo colocar contenido que puede ocultarse
+
+(Ver en googlemaps compartir o incorporar mapas, en youtube compartir video para agregarlo a mi pagina)
+
+
+-------------------------------------------------------------------------------------------
+
+INTRODUCCION A JAVASCRIPT
+
+Es un lenguaje interpretado, significa q se va leyendo linea a linea. Se lee una linea, se compila y se ejecuta. El lenguaje se llama Ecmasript.
+Cada navegador implementa su interprete de JS. El navegador de Chrome se llama V8. Esto provoca que si hay un error el archivo se va a empezar a ejecutar p si hay un error en alguna linea, se va a detener ahi.
+
+Es un lenguaje debilmente tipado, tiene tipo de datos pero no hay que especificarlo al declarar una variable o un parametro.
+
+Es un lenguaje de tipado dinamico, cuando declaro una variable, esta variable no va a mantener su tipo.
+
+Los lenguajes compilados hacen una revision sintactica, luego se complica y se genera un archivo ejecutable. Este archivo es ejecutado por el sistema operativo.
+
+CLASE QUE VIENE: VER CONCEPTOS SINCRONICO / ASINCRONICO / PARALELISMO / CONCURRENCIA / BLOQUEANTE / NO BLOQUEANTE 
+

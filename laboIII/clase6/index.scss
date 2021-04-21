@@ -1,0 +1,36 @@
+@import "colors";
+
+
+@mixin mx_principal($width:1px){
+    background-color: red;
+    border-width: $width;
+}
+
+div{
+
+    p{
+        background-color: $primaryColor;
+        @include mx_principal(3px);
+    }
+
+    .importante{
+
+        background-color: $secondaryColor;
+
+        
+        .masImportantes{
+            background-color: $primaryColor;
+        }   
+    }
+
+    &>.importante{
+
+        background-color: $secondaryColor;
+    }
+    
+}
+
+.importante{
+
+    background-color: $secondaryColor;
+}

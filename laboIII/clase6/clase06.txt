@@ -1,0 +1,4 @@
+CDN - content delivery network - un servidor remoto donde hay archivos.
+en font awesome y cdnjs hay archivos hosteados para que consumamos en nuestras paginas
+
+live sass compiler

@@ -1,0 +1,136 @@
+LABO III
+Front End - Desarrollo web
+Christian Baus - Mariano Mutti
+Total 14 clases
+Clase 7 aprox - 1er parcial
+Anteultima clase - 2do parcial
+Ultima clase - Recuperatorio 1er parcial
+Promocion solo hasta 1er fecha de final - si los dos examenes tienen 6 o mas
+A partir de la 2a fecha de final se recupera el examen pero se va a final directo
+Se firmo convenio con la UNDAV para llegar a la Licenciatura (aun no sabemos en que)
+Dos parciales - a confirmar si hay TPs
+En el recu del 1er parcial hay q llevar el examen resuelto, a partir de eso se contruye
+la recuperacion
+EXAMEN CON CAMARA Y MICROFONO
+
+HTML
+Estructura de la pagina - tiene mucho significado semantico, en ref a los motores de busqueda.
+CSS - decoracion, animaciones, donde se ubican los elementos en una pagina. como se ven.
+JavaScript - Lenguaje interpretado. Logica, funcionalidad de la pagina.
+Esto forma el nucleo (core) de la programacion web
+
+En el mundo real aparece una serie de herramientas y frameworks para desarrollar mas rapido una
+pagina. El objetivo de esta materia, es concentrarnos en lo nativo.
+
+Estas tecnologias no son estaticas, van evolucionando y absorviendo elementos de los diferentes
+frameworks y tomandolo como nativo.
+En una epoca se programaba en funcion de cada navegador (chrome, firefox, etc). Jquery
+lo que hacia era optimizar el codigo para que se vea bien en cada uno de los navegadores. Hoy
+por hoy, los navegadores modernos estandarizaron estas cuestiones.
+
+En la materia se van a ver los 3 pilares + bootstrap.
+
+A mediados de la cursada vemos AJAX: JavaScript asincronico.
+Concepto cliente - servidor. El programa corre en internet en la maquina del cliente que
+pide cosas que se ejecutan en la computadora que es un servidor que siempre esta prendido.
+En este proceso hay una demora entre que yo pido algo al servidor, el servidor tal vez conecta
+a la base de datos y la informacion vuelve. 
+
+Tambien se vera JSON: Es la manera en la que viaja la informacion. Cualquier lenguaje de prog
+lo implementa. Es una forma eficiente, liviana de transmitir objetos
+
+Jquery: No entra
+
+Bootstrap: Entra en el 2do parcial. En el primero solo CSS (lenguaje nativo)
+
+Typescript: Transforma a JS en un lenguaje tipado, similar a lo q seria C#. Se ve el
+cuatrimestre que viene en labo 4
+
+Editor: Visual Studio Code.
+
+YUM editor de paquetes.
+
+Front end: programar del lado del cliente (laboIII)
+Back end: Programar del lado del servidor (progIII)
+
+visual studio code - instalar el plug in live server
+es un servidor de desarrollo. personalidad multiple. navegador y servidor. uno le pide al otro.
+
+HTML - hypertext markup languaje - lenguaje de etiquetas que dan estructura a la pagina
+es un lenguaje de marcado, marca distintas regiones en una pagina.
+
+IP - Internet Protocole. Le asigna a cada computadora un nombre, lo q se llama direccion de IP.
+Ej: 132.123.071.092, esta direccion identifica a una PC y la diferencia de otra.
+
+URL - Uniform Resource Locator. Localizacion uniforme de un recurso. Normalmente es un nombre
+de fantasia asociado a una direccion IP.
+
+DNS - Domain Name System. Sistema de nombres de dominio. Se hacen peticiones que se trasladan a 
+traves de un monton de nodos que llevan al servidor, van y vuelven.
+
+Web - recursos almacenados en los servidores (imagenes, recursos, etc)
+
+Internet - Una red que interconecta todo el hardware. La web son los recursos que se apoyan
+en estos compronentes
+
+Servidor - Computadora comun y corriente que normalmente tiene una direccion IP fija 
+estan conectadas 24x7 y se encargan de entregar los recursos que estan en su disco rigido a aquel
+que lo solicita y tiene los permisos
+
+Cliente - el que pide los recursos, realiza la peticion al servidor. tiene q saber la url
+porque tiene que saber a quien se lo va a pedir. si ese servidor tiene el recurso solicitado
+se lo va a entregar al cliente
+
+Hosting - almacenamiento, un pedazo de disco rigido de un servidor. cuando pagamos hosting
+pagamos una cantidad de disco rigido de un servidor donde colocamos los recursos que
+pueden ser consumidos por un cliente que le va a pegar a ese servidor.
+es la fase de produccion, una vez creada, la pagina se aloja en este servidor lista para
+ser consumida por los clientes.
+
+vs-icons - iconos
+spanish - idioma
+emmet - autocompletado.
+
+hay etiquetas selfclosing, y etiquetas q tienen etiquetas de cierre
+
+las etiquetas tienen atributos que se escriben en la etiqueta de apertura
+
+HTML tiene las etiquetas meta, se usa para referenciar nuestras paginas en los motores de busqueda
+el atributo lang es importante para posicionar la pagina en el idioma correspondiente
+
+127.0.0.1:5500/index.html
+
+click derecho, open with live server
+
+5500 es el puerto por el que atendemos las consultas, nuestro servidor atiende las consultas
+a traves de ese puerto
+
+los primeros numeros osn la direccion de IP
+
+la etiqueta DOCTYPE le dice al navegador q la pag esta en HTML5
+
+lo que aparece en la etiqueta HEAD no aparece en la pag, se usa p colocar metadata que es
+info importante p los motores de busqueda
+
+el BODY es lo que contiene lo que se muestra en la pagina
+
+f12 - herramientas del desarrollador
+la solapa network muestra todas las peticiones
+
+etiqueta meta charset UTF8 -> tiene en cuenta los caracteres especiales (Ñ, acentos, etc)
+juego de caracteres unicode
+
+meta viewport la parte de la pantalla q se ve - vinculado al responsive design,
+se adapta al dispositivo en el q se muestra
+
+ENCABEZADOS
+
+etiquetas de h1 a h6
+son etiquetas semanticas, tienen significado. 
+
+Hay etiquetas de bloque, y etiquetas de linea.
+las de bloque ocupan todo el ancho del navegador.
+
+prettier code formater 
+auto rename tag
+auto close tag

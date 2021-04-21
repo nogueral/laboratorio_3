@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/*El asterisco aplica estilo a todo el html*/
+    *{
+        margin: 0;
+        box-sizing: border-box; /*me cambia la referencia del width, puede ser en referencia al border, o al contenido, etc*/
+    }
+    p{
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-left: 2vh solid red;
+        /* margin-bottom: 10px; */
+        padding: 10px 20px;
+        margin: 20px 0px; /*medidas responsive en vw y vh viewport width o viewport height*/
+        display: inline-block; /*permite ubicar elementos en la misma linea ya que el parrafo es un bloque que ocupa todo el ancho de la pantalla*/
+        width: 200px;
+       /* min-width: 400px; *//*Me indica que mi width no va a bajar de 400px*/
+       text-decoration: underline; /*decora el texto con una delineado*/
+       text-transform: capitalize; /*primera letra de cada palabra en mayusculas*/
+       letter-spacing: 5px; /*separacion de letras*/
+       font-family: 'Courier New', Courier, monospace;
+       /*Google fonts me permite traer tipos de letra sin necesidad de descargarlas*/
+    }
+
+    @font-face {
+        font-family: hola; /*defino el nombre*/
+        src: url(); /*linkeo el archivo con la letra descargada*/
+        /*se usa para utilizar fuentes externas*/
+    }
+</style>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eius, corporis sunt deleniti rem cum autem suscipit vitae facere dolorum odit commodi itaque, magnam deserunt tempore atque voluptate odio distinctio.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eius, corporis sunt deleniti rem cum autem suscipit vitae facere dolorum odit commodi itaque, magnam deserunt tempore atque voluptate odio distinctio.</p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,mGAAmG",
+    "sources": [
+        "colors.scss"
+    ],
+    "names": [],
+    "file": "colors.css"
+}

@@ -1,0 +1,22 @@
+/*Los selectores de etiqueta son generales, en este caso se aplica a todos los h1 de la pagina*/
+h1{
+    /* color: blue; propiedad: valor, de esta forma se asigna el estilo */
+    font-size: 100px;
+    color: red;
+}
+
+/* tenemos selectores de clase, donde agupamos varias reglas de estilo. estos selectores son de reutilizacion, cada elemento que utilice esta clase tomara los estilos css */
+
+.azul{
+    color: rgba(89, 0, 255, 0.568);
+}
+
+/* atributo id, unico en la pagina. es lo mas especifico. Selector Specifity me indica la especificidad de cada selector, en este caso tenemos 1,0,0. el primer digito se multiplica x 100, el segundo x 10 y el tercero x 1 */
+#miParrafo{
+    color: orange;
+}
+
+a[href *= "google"]{
+    text-decoration: none;
+    color: red;
+}

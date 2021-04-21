@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACGA,mGAAmG;ADKnG,AAEI,GAFD,CAEC,CAAC,CAAA;EACG,gBAAgB,ECXT,KAAK;EDIhB,gBAAgB,EAAE,GAAG;EACrB,YAAY,EAOc,GAAG;CAC5B;;AALL,AAOI,GAPD,CAOC,WAAW,CAAA;EAEP,gBAAgB,EChBP,MAAM;CDsBlB;;AAfL,AAYQ,GAZL,CAOC,WAAW,CAKP,eAAe,CAAA;EACX,gBAAgB,ECrBb,KAAK;CDsBX;;AAdT,AAiBI,GAjBD,GAiBG,WAAW,CAAA;EAET,gBAAgB,EC1BP,MAAM;CD2BlB;;AAIL,AAAA,WAAW,CAAA;EAEP,gBAAgB,ECjCH,MAAM;CDkCtB",
+    "sources": [
+        "index.scss",
+        "colors.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
