@@ -1,0 +1,291 @@
+
+header{
+    background-image: url(./header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navegacionHeader{
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+#logo{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none; 
+}
+
+h1{
+    color: white;
+    width: 500px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    line-height: 60px;
+}
+
+#primeraSeccion{
+    display: flex;
+    flex-direction: column;
+}
+
+#primeraDivision{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgba(78, 57, 57, 0.644);
+}
+
+.primeraSeccion{
+    text-align: center;
+    margin: 10px 10px;
+}
+
+div h3 {
+    text-transform: uppercase;
+}
+
+div div p {
+    line-height: 25px;
+}
+
+.mainImage{
+    width: 400px;
+    height: 300px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#divisionMain{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.mainArticle{
+    border: 1px solid rgba(80, 80, 80, 0.124);
+    width: 400px;
+    background-color: rgba(80, 80, 80, 0.024);
+    margin: 5px 20px;
+    height: 600px;
+
+}
+
+.mainTexto{
+    padding-left: 10px;
+    font-size: 17px;
+    padding-right: 25px;
+    line-height: 30px;
+}
+
+.mainPrecio{
+    padding-left: 10px;
+    font-size: 17px;
+    padding-right: 25px;
+    color: green;
+    font-weight: bold;
+}
+
+article ul {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.iconos{
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article a{
+    
+    text-align: center;
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    padding: 10px 146px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#verTodas{
+
+    margin-left: 1200px;
+    margin-top: 40px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 20px 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sectionContacto{
+
+    background-image: url(./encuentra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    font-size: 18px;
+
+}
+
+#h2, #pContacto{
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    background-color: orange;
+    padding: 10px 20px;
+    margin-right: 1165px;
+}
+
+.imagenBlog{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#seccionBlog{
+    display: flex;
+    flex-direction: column;
+}
+
+.articleBlog{
+    display: flex;
+    flex-direction: row;
+}
+
+.divBlog{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#blogComentarios{
+    display: flex;
+    flex-direction: row;
+}
+
+.division{
+    width: 100px;
+    height: 5px;
+    background-color: green;
+}
+
+.orange{
+    color: orange;
+    font-weight: bold;
+}
+
+#comentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+blockquote{
+
+    background-color: green;
+    color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 50px;
+    font-size: 22px;
+    border-radius: 10%;
+}
+
+
+blockquote div{
+
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+blockquote div p{
+margin-bottom: 60px;
+line-height: 50px;
+}
+
+cite{
+    margin-left: 140px;
+}
+#comillas{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+
+    margin-top: 30px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+
+}
+
+footer li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+
+}
+
+footer ul{
+    padding-left: 0;
+
+}
