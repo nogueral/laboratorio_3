@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const persona = {
+            nombre: "Juan",
+            edad: 30,
+        };
+
+
+
+        // let x = "nombre";
+
+        // console.log(persona.nombre);
+        // console.log(persona[x]); // utiliza arrays de clave-valor
+
+        // const frutas = ["Manana", "Banana", "Pera", "Melon"];
+        
+        // for(const i of frutas){
+
+        //     console.log(i);
+
+        // }
+
+        // for (const key in persona) { // forin
+
+        //     // console.log(key, persona[key]);
+
+        // }
+  
+        // console.log(Object.keys(persona));
+
+
+        function Persona(name, age){
+            let nombre = name; // atributo privado sin el this
+            this.edad = age;
+
+
+            this.getNombre = function(){
+                return nombre;
+            }
+
+            this.setNombre = function(value){
+                nombre = value;
+            }
+        }
+
+        Persona.prototype.saludar = this.saludar = function(){
+                console.log("Hola me llamo " + this.getNombre());
+            }
+
+        const p1 = new Persona("jorge", 30);
+        const p2 = new Persona("Miguel", 27);
+
+        // console.log(p1);
+        // console.log(persona);
+
+        // p1.apellido = "Perez"; // puedo agregarle desde afuera atributos y metodos
+
+        // console.log(p1);
+        // console.log(persona);
+
+        // p1.saludar();
+
+        // console.log(p1.getNombre());
+
+        // p1.setNombre("Laura");
+
+        // console.log(p1.getNombre());
+
+        // console.log(p2.getNombre());
+
+        console.log(p1);
+        console.log(p2);
+        p1.saludar();
+        p2.saludar();
+
+
+    </script>
+</body>
+</html>

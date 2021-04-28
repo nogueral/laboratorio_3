@@ -2,3 +2,7 @@ CDN - content delivery network - un servidor remoto donde hay archivos.
 en font awesome y cdnjs hay archivos hosteados para que consumamos en nuestras paginas
 
 live sass compiler
+
+CSS FLEXBOX CHEATSHEET -> herramienta util para usar flex (Ctrl + Shift + P)
+
+flexbox froggy -> herramienta util para aprender a usar flex 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // const a = []; // se puede instanciar de dos formas distintas, corchetes o llamando al ctor
+
+        // const b = new Array();
+
+        const c = {nombre: "Juan", edad: 30};
+
+        //const d = new Object();
+
+        const d = c; // no estoy haciendo una copia de objeto, sino q apunto a la misma referencia
+
+        //const d = {...c}; // otra de las formas correctas de hacer la asignacion
+
+        // console.log(a);
+
+        // console.log(b);
+
+        console.log(c);
+
+        console.log(d);
+
+        d.nombre = "Jose";
+
+        // b.nombre = a.nombre; una dee las formas correctas
+        // b.edad = a.edad;
+
+        console.log(c);
+
+        console.log(d);
+
+
+
+
+        //----------------------------------------------------------------------------------------------
+
+
+        function sumar(a, b, ...c){ // pasametro REST, agarra todos los parametros q vengan de mas y los va a encerrar en un array
+
+            //console.log(arguments);
+            //console.log(c);
+
+            let suma = a + b;
+
+            c.forEach((elemento)=> {suma += elemento;})
+            
+            return suma;
+        
+        }
+
+
+        console.log(sumar(5,4,3,2,1,5));
+
+
+
+    </script>
+    
+</body>
+</html>
