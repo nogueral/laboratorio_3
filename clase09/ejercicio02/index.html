@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/scripts.js" type="module"></script>
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Document</title>
+    <title>Lista dinamica</title>
 </head>
 <body>
     <div class="container">
         <h1>Lista dinamica</h1>
+        <form>
+            <input type="text" name="nombre" placeholder="Ingrese nombre: " required><br><br>
+            <input type="email" name="mail" placeholder="Ingrese e-mail: " required><br><br>
+            <fieldset>
+                <legend>Genero</legend>
+                <input type="radio" name="sexo" value="Masculino" checked>Masculino <br>
+                <input type="radio" name="sexo" value="Femenino">Femenino <br>
+            </fieldset>
+            <input type="submit" value="Alta Persona"> 
+        </form>
         <button id="btnLista">Crear Lista</button>
         <div id="divLista">
         </div>
