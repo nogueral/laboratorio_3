@@ -17,7 +17,7 @@ import Persona from "../personas.js";
 
 /*--------------------------------------------------------------------------------------------*/
 let boton = null;
-let personas = [];
+const personas = JSON.parse(localStorage.getItem("lista")) || [];
 
 window.addEventListener("DOMContentLoaded", ()=>{
 
@@ -29,7 +29,15 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
     boton.addEventListener("click", handlerLoadList);
 
+    if(personas.length > 0){
+        handlerLoadList(personas);
+    }
+
 });
+
+function limpiarFormulario(frm){
+    frm.reset();
+}
 
 function handlerSubmit(e){
     e.preventDefault();
@@ -39,19 +47,27 @@ function handlerSubmit(e){
     const p1 = new Persona(Date.now(), form.nombre.value, form.mail.value, form.sexo.value);
 
     altaPersona(p1);
+
+    limpiarFormulario(form);
+}
+
+function almacenarDatos(data){
+    localStorage.setItem("lista", JSON.stringify(data));
 }
 
 function altaPersona(p1){
     personas.push(p1);
 
-    //handlerLoadList();
+    almacenarDatos(personas);
+
+    handlerLoadList();
 }
 
 function handlerLoadList(e){
     renderizarLista(crearTabla(personas), document.getElementById("divLista"));
-    e.target.textContent = "Eliminar Tabla";
-    e.target.removeEventListener("click", handlerLoadList);
-    e.target.addEventListener("click", handlerDeleteList);
+    // e.target.textContent = "Eliminar Tabla";
+    // e.target.removeEventListener("click", handlerLoadList);
+    // e.target.addEventListener("click", handlerDeleteList);
 }
 
 function handlerDeleteList(e){
@@ -171,4 +187,36 @@ function handlerClick(e){
     let id = e.target.parentNode.dataset.id;
 
     console.log(id);
+    cargarFormulario(id);
 }
+
+function cargarFormulario(id){
+
+    let Persona = null;
+
+    // personas.forEach((persona)=>{
+    //     if(persona.id === parseInt(id)){
+
+    //         Persona = persona;
+
+    //     }
+    // });
+
+    Persona = personas.filter(p => p.id === parseInt(id))[0];
+
+    console.log(Persona);
+
+    const {id_persona, nombre, sexo, email} = Persona;
+
+    const frm = document.forms[0];
+
+    frm.nombre.value = nombre;
+    frm.mail.value = email;
+    frm.id = id_persona;
+    frm.sexo.value = sexo;
+
+    document.getElementById("btnSubmit").value = "Modificar";
+    document.getElementById("btnEliminar").classList.remove("oculto");
+}
+
+

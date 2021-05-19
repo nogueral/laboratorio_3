@@ -14,12 +14,14 @@
         <form>
             <input type="text" name="nombre" placeholder="Ingrese nombre: " required><br><br>
             <input type="email" name="mail" placeholder="Ingrese e-mail: " required><br><br>
+            <input type="hidden" name="id">
             <fieldset>
                 <legend>Genero</legend>
                 <input type="radio" name="sexo" value="Masculino" checked>Masculino <br>
                 <input type="radio" name="sexo" value="Femenino">Femenino <br>
             </fieldset>
-            <input type="submit" value="Alta Persona"> 
+            <input type="submit" id="btnSubmit" value="Alta Persona"> 
+            <input type="button" id="btnEliminar" class="oculto" value="Eliminar"> 
         </form>
         <button id="btnLista">Crear Lista</button>
         <div id="divLista">

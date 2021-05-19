@@ -21,3 +21,11 @@ table, td, th{
 form{
     margin-bottom: 2rem;
 }
+
+.oculto{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
